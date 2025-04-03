@@ -1,13 +1,13 @@
 "use client";
 
-import FilteredMenu from "@/app/components/filteredMenu";
-import { Button } from "@/app/components/ui/button";
-import { categories } from "@/constants";
-import { MenuCategory, MenuSection } from "@/typings";
+import { Button } from "@styles/components/ui/button";
 
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { MenuCategory, MenuSection } from "../../typings";
+import { categories } from "../../constants";
+import FilteredMenu from "@styles/components/filteredMenu";
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState<MenuCategory | string>(
     "starters"
